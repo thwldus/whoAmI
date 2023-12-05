@@ -26,7 +26,7 @@
             }
             a:visited { color: black; }
             a:hover { color: green; }
-            p {
+            .side_info {
                 font-weight: bold;
             }
             h1{
@@ -84,8 +84,7 @@
                 color: rgb(134, 47, 255);
             }
             ol{
-                margin-top: 0;
-                margin-bottom: 5;
+                margin: 0px;
                 padding-top: 10px;
                 padding-bottom: 10px;
                 padding-left: 30px;
@@ -96,10 +95,10 @@
         <div>
             <aside>
                 <img src="img/face.jpg">
-                <p>이름: 소지연</p>
-                <p>나이: 21세</p>
-                <p>생일: 2003.09.06</p>
-                <p>학력: 대학교 2학년(재학)</p>
+                <p class="side_info">이름: 소지연</p>
+                <p class="side_info">나이: 21세</p>
+                <p class="side_info">생일: 2003.09.06</p>
+                <p class="side_info">학력: 대학교 2학년(재학)</p>
             </aside> 
             <main>
                 <section>
@@ -181,9 +180,9 @@
                         </tr>
                     </table>
                 </section>
-                <section> 저는 <span id="identity">한양대학교 에리카 캠퍼스 소프트웨어융합대학 컴퓨터학부 2학년</span>에 재학하고 있습니다. 
+                <section><p style="margin: 10px 0px;">저는 <span id="identity">한양대학교 에리카 캠퍼스 소프트웨어융합대학 컴퓨터학부 2학년</span>에 재학하고 있습니다. 
                     졸업학점이 140학점이기 때문에, 매 학기 많은 강좌를 신청하여 다니고 있습니다. 그래서 이번학기에 
-                    수강하는 과목도 총 20학점입니다. 
+                    수강하는 과목도 총 20학점입니다.</p>  
                     <ol style="border: dashed 2px skyblue;">
                         <li>전공기초 - 전산통계학</li>
                         <li>전공핵심 - 데이터베이스<br>
@@ -193,8 +192,8 @@
                         <li>교양선택 - 교양피트니스트레이닝<br>
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 웹프로그래밍의 이해와 활용</li>
                     </ol>
-                    시간표를 보시면 아시겠지만, 저는 오후 수업보다는 오전 수업을 좋아합니다^^... 그래야 저 스스로가 부지런해지고 
-                    수업을 마치고 빠르게 집으로 갈 수 있는 것 같아서입니다.<br>
+                    <p style="margin: 10px 0px;">시간표를 보시면 아시겠지만, 저는 오후 수업보다는 오전 수업을 좋아합니다^^... 그래야 저 스스로가 부지런해지고 
+                        수업을 마치고 빠르게 집으로 갈 수 있는 것 같아서입니다.</p>
                     <span id="message">비어있는 시간은 언제든 놀자고 하는 약속은 환영입니다!</span>
                 </section>
                 <div class="clear"></div>
