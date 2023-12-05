@@ -15,7 +15,7 @@
                 font-size: 20px;
                 font-weight: bold;
             }
-            li{
+            ul li{
                 padding-left: 15px;
                 padding-right: 15px;
                 display: inline;
@@ -29,6 +29,14 @@
             p {
                 font-weight: bold;
             }
+            h1{
+                width: 1100px;
+                border-top: solid 2px gray;
+                border-bottom: solid 2px gray;
+            }
+            h3{
+                margin-bottom: 5px;
+            }
             aside{
                 width: 220px;
                 float: left;
@@ -36,19 +44,52 @@
                 margin: 10px 10px 10px 5px;
             }
             main{
-                width: 990px;
+                width: 1100px;
                 float: left;
                 margin-top: 10px;
                 border: solid 2px purple;
                 margin-left: 30px;
             }
             section{
+                width: 530px;
+                float: left;
                 border: solid 2px orange;
             }
             div{
                 width: 1500px;
             }
+            .clear{
+                clear: left;
+            }
 
+            table, th, tr, td{
+                border: solid 1px black;
+                border-collapse: collapse;
+                padding: 8px;
+            }
+            th{
+                width: 70px;
+            }
+            .lecture{
+                background-color: gainsboro;
+            }
+            #identity{
+                font-weight: bold;
+                color: rgb(255, 47, 172);
+            }
+            #message{
+                font-style: italic;
+                font-size: 20px;
+                font-weight: bold;
+                color: rgb(134, 47, 255);
+            }
+            ol{
+                margin-top: 0;
+                margin-bottom: 5;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-left: 30px;
+            }
         </style>
     </head>
     <body>
@@ -58,9 +99,7 @@
                 <p>이름: 소지연</p>
                 <p>나이: 21세</p>
                 <p>생일: 2003.09.06</p>
-                <p>학력: 대학교 2학년
-                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(한양대학교 에리카) 
-                </p>
+                <p>학력: 대학교 2학년(재학)</p>
             </aside> 
             <main>
                 <section>
@@ -70,6 +109,100 @@
                         <li>GOAL</li>
                     </ul>
                 </section>
+                <div class="clear"></div>
+                <h1>이번학기에는...!</h1>
+                <h3>이번학기 시간표</h3>
+                <section>
+                    <table>
+                        <tr>
+                            <th>시간</th>
+                            <th>월요일</th>
+                            <th>화요일</th>
+                            <th>수요일</th>
+                            <th>목요일</th>
+                            <th>금요일</th>
+                        </tr>
+                        <tr>
+                            <td>9시</td>
+                            <td class="lecture" rowspan="3">소프트웨어개발실무</td>
+                            <td></td>
+                            <td></td>
+                            <td class="lecture" rowspan="2">교양피트니스트레이닝</td>
+                        </tr>
+                        <tr>
+                            <td>10시</td>
+                            <td></td>
+                            <td class="lecture" rowspan="2">알고리즘설계와분석</td>
+                            <td class="lecture" rowspan="2">알고리즘설계와분석</td>
+                        </tr>
+                        <tr>
+                            <td>11시</td>
+                            <td></td>
+                            <td class="lecture" rowspan="2">웹프로그래밍의이해와활용</td>
+                        </tr>
+                        <tr>
+                            <td>12시</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>1시</td>
+                            <td class="lecture" rowspan="2">데이터베이스</td>
+                            <td class="lecture" rowspan="2">학술영어</td>
+                            <td></td>
+                            <td class="lecture" rowspan="2">데이터베이스</td>
+                            <td class="lecture" rowspan="2">데이터베이스</td>
+                        </tr>
+                        <tr>
+                            <td>2시</td>
+                        </tr>
+                        <tr>
+                            <td>3시</td>
+                            <td></td>
+                            <td></td>
+                            <td class="lecture" rowspan="3">전산통계학</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>4시</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>5시</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </section>
+                <section> 저는 <span id="identity">한양대학교 에리카 캠퍼스 소프트웨어융합대학 컴퓨터학부 2학년</span>에 재학하고 있습니다. 
+                    졸업학점이 140학점이기 때문에, 매 학기 많은 강좌를 신청하여 다니고 있습니다. 그래서 이번학기에 
+                    수강하는 과목도 총 20학점입니다. 
+                    <ol style="border: dashed 2px skyblue;">
+                        <li>전공기초 - 전산통계학</li>
+                        <li>전공핵심 - 데이터베이스<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 소프트웨어개발실무<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 알고리즘설계와분석</li>
+                        <li>교양필수 - 학술영어2:글쓰기</li>
+                        <li>교양선택 - 교양피트니스트레이닝<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 웹프로그래밍의 이해와 활용</li>
+                    </ol>
+                    시간표를 보시면 아시겠지만, 저는 오후 수업보다는 오전 수업을 좋아합니다^^... 그래야 저 스스로가 부지런해지고 
+                    수업을 마치고 빠르게 집으로 갈 수 있는 것 같아서입니다.<br>
+                    <span id="message">비어있는 시간은 언제든 놀자고 하는 약속은 환영입니다!</span>
+                </section>
+                <div class="clear"></div>
+                <h3>동아리 활동</h3>
+                    <ol>
+                        <li>UMC   - IT 개발 연합 동아리</li>
+                        <li>타이푼 - 농구 동아리</li>
+                    </ol>
             </main>
         </div>
         
