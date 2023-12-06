@@ -4,6 +4,23 @@
         <meta charset="utf-8">
         <title>whoAmI_like</title>
         <link rel="stylesheet" type="text/css" href="base.css"> 
+        <style>
+            audio{
+                height: 20px;
+                padding: 10px 0px;
+            }
+            .album{
+                float: left;
+            }
+            .list_item {
+                margin:0px;
+                padding:10px;
+                float: left;
+            }
+            .info{
+                margin-left: 10px;
+            }
+        </style>
     </head>
     <body>
         <div id="wrap">
@@ -15,11 +32,77 @@
                 <p class="side_info">학력: 대학교 2학년(재학)</p>
             </aside> 
             <main>
-                <ul>
+                <ul class="menu">
                     <li><a href="./home.html">HOME</a></li> |
                     <li><a href="./like.html">LIKE</a></li> |
                     <li>GOAL</li>
                 </ul>
+                <h1>좋아하는 것은..!</h1>
+                <h3>음악</h3>
+                <section style="width: 500px;">
+                    <div class="album"><img src="img/music1.jpg" width="100px"></div>
+                    <div class="list_item">  
+                        <div class="info">
+                            제목: RUNNING<br>
+                            가수: NF
+                        </div>
+                        <audio src="music/RUNNING.mp3" controls></audio>
+                    </div>
+                </section>
+                <section style="width: 500px;">
+                    <div class="album"><img src="img/music2.jpg" width="100px"></div>
+                    <div class="list_item">  
+                        <div class="info">
+                            제목: Get Cool<br>
+                            가수: 스트레이키즈
+                        </div>
+                        <audio src="music/Get Cool.mp3" controls></audio>
+                    </div>
+                </section>
+                <div class="clear"></div>
+                <section style="width: 500px;">
+                    <div class="album"><img src="img/music3.jpg" width="100px"></div>
+                    <div class="list_item">  
+                        <div class="info">
+                            제목: Bloom<br>
+                            가수: Wild Youth, Dabin
+                        </div>
+                        <audio src="music/Bloom.mp3" controls></audio>
+                    </div>
+                </section>
+                <section style="width: 500px;">
+                    <div class="album"><img src="img/music4.jpg" width="100px"></div>
+                    <div class="list_item">  
+                        <div class="info">
+                            제목: 아직도 겨울(A LONG WINTER)<br>
+                            가수: AB6IX
+                        </div>
+                        <audio src="music/아직도 겨울.mp3" controls></audio>
+                    </div>
+                </section>
+                <div class="clear"></div>
+                <section style="width: 500px;">
+                    <div class="album"><img src="img/music5.jpg" width="100px"></div>
+                    <div class="list_item">  
+                        <div class="info">
+                            제목: 모자를 눌러 쓰고<br>
+                            가수: 세븐틴
+                        </div>
+                        <audio src="music/모자를 눌러 쓰고.mp3" controls></audio>
+                    </div>
+                </section>
+                <section style="width: 500px;">
+                    <div class="album"><img src="img/music6.jpg" width="100px"></div>
+                    <div class="list_item">  
+                        <div class="info">
+                            제목: 그대로일 테니<br>
+                            가수: 그리오(Feat.Gist, 한요한)
+                        </div>
+                        <audio src="music/그대로일 테니.mp3" controls></audio>
+                    </div>
+                </section>
+                <div class="clear"></div>
+                (추가정보)
             </main>
         </div>
     </body>
