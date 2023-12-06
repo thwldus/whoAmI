@@ -30,6 +30,7 @@ h1{
     background-color: rgb(184, 228, 246);
     border-top: solid 2px gray;
     border-bottom: solid 2px gray;
+    padding: 3px;
 }
 h3{
     width: 200px;
@@ -48,7 +49,6 @@ main{
     margin-left: 30px;
 }
 section{
-    width: 530px;
     float: left;
 }
 #wrap{
