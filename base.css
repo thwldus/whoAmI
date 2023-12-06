@@ -27,29 +27,29 @@ a:hover { color: green; }
 }
 h1{
     width: 1100px;
+    background-color: rgb(184, 228, 246);
     border-top: solid 2px gray;
     border-bottom: solid 2px gray;
 }
 h3{
+    width: 200px;
+    background-color: rgb(218, 243, 182);
     margin-bottom: 5px;
 }
 aside{
     width: 220px;
     float: left;
-    border: solid 2px red;
-    margin: 10px 10px 10px 5px;
+    margin: 60px 10px 10px 5px;
 }
 main{
     width: 1100px;
     float: left;
     margin-top: 10px;
-    border: solid 2px purple;
     margin-left: 30px;
 }
 section{
     width: 530px;
     float: left;
-    border: solid 2px orange;
 }
 #wrap{
     width: 1500px;
