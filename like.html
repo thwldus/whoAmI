@@ -20,12 +20,27 @@
             .info{
                 margin-left: 10px;
             }
+            #movie_name{
+                color: magenta;
+                font-weight: bold;
+            }
+            #preview{
+                width: 500px;
+                position: relative;
+                left: 180px;
+            }
+            #notice{
+                color: blueviolet;
+                font-weight: bold;
+                font-size: 20px;
+                text-align: center;
+            }
         </style>
     </head>
     <body>
         <div id="wrap">
             <aside>
-                <img src="img/face.jpg">
+                <img src="res/img/face.jpg">
                 <p class="side_info">이름: 소지연</p>
                 <p class="side_info">나이: 21세</p>
                 <p class="side_info">생일: 2003.09.06</p>
@@ -40,69 +55,78 @@
                 <h1>좋아하는 것은..!</h1>
                 <h3>음악</h3>
                 <section style="width: 500px;">
-                    <div class="album"><img src="img/music1.jpg" width="100px"></div>
+                    <div class="album"><img src="res/img/music1.jpg" width="100px"></div>
                     <div class="list_item">  
                         <div class="info">
                             제목: RUNNING<br>
                             가수: NF
                         </div>
-                        <audio src="music/RUNNING.mp3" controls></audio>
+                        <audio src="res/music/RUNNING.mp3" controls></audio>
                     </div>
                 </section>
                 <section style="width: 500px;">
-                    <div class="album"><img src="img/music2.jpg" width="100px"></div>
+                    <div class="album"><img src="res/img/music2.jpg" width="100px"></div>
                     <div class="list_item">  
                         <div class="info">
                             제목: Get Cool<br>
                             가수: 스트레이키즈
                         </div>
-                        <audio src="music/Get Cool.mp3" controls></audio>
+                        <audio src="res/music/Get Cool.mp3" controls></audio>
                     </div>
                 </section>
                 <div class="clear"></div>
                 <section style="width: 500px;">
-                    <div class="album"><img src="img/music3.jpg" width="100px"></div>
+                    <div class="album"><img src="res/img/music3.jpg" width="100px"></div>
                     <div class="list_item">  
                         <div class="info">
                             제목: Bloom<br>
                             가수: Wild Youth, Dabin
                         </div>
-                        <audio src="music/Bloom.mp3" controls></audio>
+                        <audio src="res/music/Bloom.mp3" controls></audio>
                     </div>
                 </section>
                 <section style="width: 500px;">
-                    <div class="album"><img src="img/music4.jpg" width="100px"></div>
+                    <div class="album"><img src="res/img/music4.jpg" width="100px"></div>
                     <div class="list_item">  
                         <div class="info">
                             제목: 아직도 겨울(A LONG WINTER)<br>
                             가수: AB6IX
                         </div>
-                        <audio src="music/아직도 겨울.mp3" controls></audio>
+                        <audio src="res/music/아직도 겨울.mp3" controls></audio>
                     </div>
                 </section>
                 <div class="clear"></div>
                 <section style="width: 500px;">
-                    <div class="album"><img src="img/music5.jpg" width="100px"></div>
+                    <div class="album"><img src="res/img/music5.jpg" width="100px"></div>
                     <div class="list_item">  
                         <div class="info">
                             제목: 모자를 눌러 쓰고<br>
                             가수: 세븐틴
                         </div>
-                        <audio src="music/모자를 눌러 쓰고.mp3" controls></audio>
+                        <audio src="res/music/모자를 눌러 쓰고.mp3" controls></audio>
                     </div>
                 </section>
                 <section style="width: 500px;">
-                    <div class="album"><img src="img/music6.jpg" width="100px"></div>
+                    <div class="album"><img src="res/img/music6.jpg" width="100px"></div>
                     <div class="list_item">  
                         <div class="info">
                             제목: 그대로일 테니<br>
                             가수: 그리오(Feat.Gist, 한요한)
                         </div>
-                        <audio src="music/그대로일 테니.mp3" controls></audio>
+                        <audio src="res/music/그대로일 테니.mp3" controls></audio>
                     </div>
                 </section>
                 <div class="clear"></div>
-                (추가정보)
+                <h3>영화</h3>
+                <section style="width: 850px;">
+                    <p>제가 좋아하는 영화는 <span id="movie_name">인사이드아웃(Inside Out)</span>입니다.<br>
+                        2015년에 개봉한 영화로, 주인공인 라일리의 머릿속에 존재하는 감정 컨트롤 본부에 있는 
+                        기쁨, 슬픔, 버럭, 까칠, 소심 다섯 감정들의 이야기를 다룬 영화이다. </p>
+                    <video id="preview" controls>
+                        <source src="res/insideout.mp4" type="video/mp4">
+                    </video>
+                    <p id="notice">2024년 여름 인사이드아웃 2가 개봉합니다~!</p>
+                </section>
             </main>
         </div>
     </body>
